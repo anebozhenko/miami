@@ -1,0 +1,94 @@
+@media (max-width: 1070px) {
+  .aparts__photo {
+    max-width: 49%; }
+    .aparts__photo_l {
+      max-width: 61%; }
+    .aparts__photo_s {
+      max-width: 36%; } }
+
+@media (max-width: 1024px) {
+  .info__inner {
+    padding-top: 60px;
+    padding-bottom: 40px; }
+  .info__title, .info__text {
+    width: 75%;
+    float: none; }
+  .info__text {
+    max-width: 100%; } }
+
+@media (max-width: 768px) {
+  .header__logo {
+    left: 50px; }
+  .header__phone, .header__order {
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 85px; }
+  .header__order {
+    margin-top: 30px; }
+  .nav {
+    display: block;
+    text-align: right; }
+    .nav a {
+      display: block;
+      padding: 5px; }
+  .info__text ol {
+    list-style-position: inside; }
+  .gallery__title {
+    margin-bottom: 60px; }
+  .aparts__photo {
+    background-position: 40% center; }
+    .aparts__photo_l {
+      max-width: 49%; }
+    .aparts__photo_s {
+      max-width: 49%; }
+  .consultation__title {
+    margin-bottom: 60px; }
+  .consultation__inner {
+    padding-bottom: 60px; }
+  .consultation__cols {
+    flex-direction: column; }
+  .consultation__col {
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px; }
+  .consultation__text-title {
+    margin-bottom: 10px; }
+  .testimonials__title {
+    margin-bottom: 60px; }
+  .testimonials__inner {
+    padding-bottom: 40px; }
+  .t-items {
+    flex-direction: column; }
+    .t-items__item {
+      max-width: 60%;
+      margin: auto;
+      margin-bottom: 30px; }
+  .contact__inner {
+    padding-bottom: 40px; }
+  .contact__title {
+    margin-bottom: 60px; }
+  .contact__cols {
+    flex-direction: column; }
+  .contact__col {
+    max-width: 100%; } }
+
+@media (max-width: 560px) {
+  .info__inner {
+    padding-top: 30px; }
+  .info__title {
+    font-size: 40px; }
+  .gallery__inner {
+    padding-bottom: 60px; }
+  .aparts__photos {
+    flex-direction: column; }
+  .aparts__photo {
+    max-width: 100%;
+    margin-bottom: 10px; }
+    .aparts__photo_l, .aparts__photo_s {
+      max-width: 100%; }
+  .consultation__col {
+    max-width: 100%; }
+  .title_decor {
+    font-size: 36px; } }

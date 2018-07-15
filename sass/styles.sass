@@ -1,0 +1,333 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	font-family: Ubuntu
+
+a
+	text-decoration: none
+
+ul
+	list-style-type: none
+
+.container
+	width: 90%
+	max-width: 940px
+	margin: auto
+
+=clearfix
+  &:after
+    content: ''
+    display: table
+    clear: both
+
+// Hero
+.hero
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: left center
+	&__inner
+		min-height: 768px
+		position: relative
+
+.header
+	position: relative
+	padding-top: 95px
+	+clearfix
+	&__phone
+		color: rgba(#fff, .6)
+		float: left
+	&__order
+		color: rgba(#fff, .6)
+		text-transform: uppercase
+		border-bottom: 1px dashed rgba(#fff, .6)
+		float: right
+		&:hover
+			border-bottom-color: transparent
+	&__logo
+		position: absolute
+		top: 55px
+		left: 50%
+		transform: translateX(-50%)
+
+.nav
+	position: absolute
+	width: 100%
+	bottom: 60px
+	display: flex
+	justify-content: space-between
+	a
+		text-transform: uppercase
+		color: #fff
+		font-weight: 500
+		transition: color .2s ease
+		&:hover
+			color: rgba(#fff, .6)
+
+// Info
+.info
+	&__inner
+		min-height: 673px
+		padding-top: 120px
+		+clearfix
+	&__title
+		font-size: 48px
+		font-weight: 100
+		text-transform: uppercase
+		float: left
+		line-height: 60px
+		strong
+			font-weight: 500
+		span
+			color: #00aaef
+	&__text
+		margin-top: 6px
+		float: right
+		max-width: 550px
+		line-height: 24px
+		p
+			margin-bottom: 30px
+		strong
+			font-weight: 600
+		ol
+			margin-bottom: 30px
+
+// Gallery
+.title_decor
+	font-size: 48px
+	font-weight: 100
+	text-transform: uppercase
+	position: relative
+	display: inline-block
+	margin-top: -30px
+	&:after
+		position: absolute
+		bottom: -5px
+		content: ''
+		width: 100%
+		height: 2px
+		display: block
+		background-color: #00aaef
+	&:before
+		content: ''
+		display: block
+		width: 40px
+		height: 13px
+		z-index: 1
+		background-image: url('../img/decor.png')
+		background-repeat: no-repeat
+		background-position: center center
+		position: absolute
+		bottom: -16px
+		left: 50%
+		transform: translateX(-50%)
+
+.gallery
+	background-color: #eee
+	&__inner
+		min-height: 1256px
+		text-align: center
+	&__title
+		margin-bottom: 100px
+		&:before
+			background-color: #eee
+
+.button
+	display: block
+	width: 100%
+	height: 52px
+	background-color: #00aaef
+	line-height: 52px
+	color: #fff
+	font-size: 14px
+	text-transform: uppercase
+	transition: all .2s ease
+	border: none
+	cursor: pointer
+	&:hover
+		background-color: #00aaef - 10
+		color: #fff - 10
+	&_inline
+		width: auto
+		display: inline-block
+		padding: 0 62px
+
+.aparts
+	text-align: left
+	margin-bottom: 36px
+	&__photos
+		display: flex
+		justify-content: space-between
+		margin-bottom: 16px
+	&__photo
+		height: 260px
+		background-repeat: no-repeat
+		background-position: center cetner
+		background-size: cover
+		max-width: 460px
+		width: 100%
+		&_l
+			max-width: 620px
+		&_s
+			max-width: 300px
+	&__text
+		font-weight: 400
+		strong
+			font-weight: 500
+		a
+			font-weight: 500
+			color: #00aaef
+			&:hover
+				color: #00aaef - 10
+
+// Consultation
+.consultation
+	text-align: center
+	&__inner
+		min-height: 540px
+	&__title
+		margin-bottom: 100px
+		&:before
+			background-color: #fff
+	&__cols
+		display: flex
+		justify-content: space-between
+	&__col
+		text-align: left
+		max-width: 460px
+		width: 48%
+	&__text-title
+		font-size: 32px
+		font-weight: 400
+		line-height: 36px
+		margin-bottom: 30px
+	&__text
+		line-height: 24px
+
+.form
+	&__field,
+	&__textarea
+		width: 100%
+		background-color: #eee
+		border: none
+		margin-bottom: 10px
+		font-size: 20px
+		text-align: center
+		font-size: 16px
+		font-weight: 500
+		&::placeholder
+			text-transform: uppercase
+			font-size: 14px
+			color: #393939
+			font-weight: 700
+	&__field
+		height: 52px
+		line-height: 52px
+	&__textarea
+		font-family: Ubuntu
+		max-height: 168px
+		resize: none
+		padding-top: 20px
+		&::placeholder
+			font-size: 14px
+			font-weight: 700
+
+input
+	font-family: Ubuntu
+
+textarea
+	font-family: Ubuntu
+
+// Testimonials
+.testimonials
+	background-color: #eee
+	text-align: center
+	&__title
+		margin-bottom: 100px
+		&:before
+			background-color: #eee
+	&__inner
+		min-height: 570px
+
+.t-items
+	display: flex
+	justify-content: space-between
+	&__item
+		max-width: 300px
+	&__photo
+		width: 148px
+		height: 148px
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		border-radius: 50%
+		margin: auto
+		margin-bottom: 10px
+		position: relative
+		&:before
+			content: '“'
+			display: block
+			position: absolute
+			font-size: 100px
+			font-family: 'Didot'
+			top: 13%
+			left: -21%
+	&__name
+		font-weight: 700
+		line-height: 22px
+	&__pos
+		line-height: 22px
+		color: #696973
+		font-weight: 400
+		font-style: italic
+		margin-bottom: 14px
+	&__text
+		font-weight: 500
+
+// Contact
+.contact
+	text-align: center
+	&__inner
+		min-height: 610px
+	&__title
+		margin-bottom: 100px
+		&:before
+			background-color: #fff
+	&__cols
+		display: flex
+		justify-content: space-between
+	&__col
+		text-align: left
+		max-width: 460px
+	&__text
+		font-size: 24px
+		a
+			color: #000
+		p
+			margin-bottom: 20px
+
+// Footer
+.footer
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center bottom
+	position: relative
+	&__inner
+		min-height: 540px
+	&__logo
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+	&__copyright
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 70px
+		color: #fff
+		text-transform: uppercase
+
+// Media queries
+@import media.sass
